@@ -62,6 +62,22 @@ export function aveDev(data: number[], days: number) {
   })
 }
 
+export function slope(data: number[], days: number) {
+  const sumX = days * (days - 1) * 0.5
+  const sumXSqr = (days * (days - 1) * (2 * days - 1)) / 6
+  const divisor = sumX * sumX - days * sumXSqr
+  const len = days - 1
+  return reCalc(data, days, (data) => {
+    let sumY = 0
+    let sumXY = 0
+    for (let i = len; i >= 0; i--) {
+      sumY += data[len - i]
+      sumXY += i * data[len - i]
+    }
+    return (days * sumXY - sumX * sumY) / divisor
+  })
+}
+
 export function cross(line1: number[], line2: number[]) {
   const ret = []
   const minLen = Math.min(line1.length, line2.length)
