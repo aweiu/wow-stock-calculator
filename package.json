@@ -1,7 +1,7 @@
 {
   "name": "wow-stock-calculator",
-  "version": "0.1.9",
-  "description": "类似通达信函数的股票计算工具",
+  "version": "0.2.0",
+  "description": "JS 版 TA-Lib，类似通达信函数的股票计算工具",
   "keywords": [
     "stock",
     "quotation",
@@ -9,7 +9,8 @@
     "trade",
     "quantization",
     "tdx",
-    "talib"
+    "talib",
+    "TA-Lib"
   ],
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
