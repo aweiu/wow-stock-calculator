@@ -1,6 +1,6 @@
 {
   "name": "wow-stock-calculator",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "JS 版 TA-Lib，类似通达信函数的股票计算工具",
   "keywords": [
     "stock",
